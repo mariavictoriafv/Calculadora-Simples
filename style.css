@@ -1,11 +1,41 @@
-.fundo{
+*{
+    margin: 0;
+    padding: 0;
+}
 
+.fundo{
+    background-image: linear-gradient(45deg,maroon, black);
+    height: 100vh;
+    text-align: center;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .calculadora{
+    position: absolute; /*a div ocupa apenas os espaços que os elementos precisam*/
+    background-color: rgba(0, 0, 0, 0.9); /*r,g,b e alpha, vai de 0 a 1 e adiciona transparência/opacidade à cor*/
+    top: 50%;
+    left: 50%;
+    /*mudando o centro da div para colocá-la no centro da página*/
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.btn{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: darkslategrey;
+    color: black;
 
 }
 
+.btn:hover{
+    background-color:blanchedalmond;
+}
+
 #resultado{
-    
+
 }
